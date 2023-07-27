@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Memes App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="view__container">
+        <h2>Настройки:</h2>
+        <h3>Мем</h3>
+        <select class="selector__frame" id="selector__img">
+          <option value="" selected>Выбери мем</option>
+        </select>
+        <h3>Текст сверху</h3>
+        <input
+          class="input__frame"
+          type="text"
+          id="input__text-top"
+          placeholder="Напиши что-нибудь"
+        />
+        <h3>Текст снизу</h3>
+        <input
+          class="input__frame"
+          type="text"
+          id="input__text-bottom"
+          placeholder="Напиши что-нибудь"
+        />
+      </div>
+      <div class="view__container">
+        <h2>Превью:</h2>
+        <div class="meme__frame">
+          <img
+            class="meme__img"
+            id="meme__img"
+            src="resources/default-img.png"
+            alt="Картинка не была загружена"
+          />
+          <div class="text__top">
+            <p id="text__top">Текст сверху</p>
+          </div>
+          <div class="text__bottom">
+            <p id="text__bottom">Текст снизу</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
